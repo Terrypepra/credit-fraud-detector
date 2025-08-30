@@ -1,0 +1,58 @@
+/*
+  App.css - Main Application Styles
+  ---------------------------------
+  This file contains custom styles for the Credit Fraud Detector app.
+  Use this file for unique branding, layout tweaks, and overrides.
+*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  /* Subtle background for app container */
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(30, 64, 175, 0.08);
+}
+
+/* Logo styles - can be customized for your brand */
+.logo {
+  height: 5em;
+  padding: 1.5em;
+  transition: filter 300ms, transform 200ms;
+  will-change: filter, transform;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3b82f6aa);
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Card utility for custom sections */
+.card {
+  padding: 2em;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(30, 64, 175, 0.06);
+  margin-bottom: 2rem;
+}
+
+/* Documentation link style */
+.read-the-docs {
+  color: #64748b;
+  font-size: 0.95em;
+  letter-spacing: 0.01em;
+}
+
+/* Animation for spinning logo (if used) */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Example: animate logo only if user prefers motion */
+@media (prefers-reduced-motion: no-preference) {
+  .logo.spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
